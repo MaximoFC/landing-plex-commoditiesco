@@ -7,7 +7,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="max-w-3xl mb-20">
-                    <h2 className="text-3xl md:text-4xl font-medium mb-6">
+                    <h2 className="font-serif text-3xl md:text-4xl font-medium mb-6">
                         ABOUT US
                     </h2>
                     <p className="text-lg leading-relaxed">

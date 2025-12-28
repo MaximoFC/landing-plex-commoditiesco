@@ -74,7 +74,7 @@ export default function Products() {
       id="products"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">OUR PRODUCTS</h2>
+        <h2 className="font-serif text-3xl font-bold text-center mb-12">OUR PRODUCTS</h2>
 
         <div
           className="
