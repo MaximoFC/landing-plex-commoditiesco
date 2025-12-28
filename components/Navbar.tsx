@@ -14,7 +14,7 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 w-full z-50 border-b border-neutral-200">
+        <header className="fixed top-0 w-full z-50 border-b border-neutral-200 bg-white">
             <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
                 <a href="#home">
