@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useState } from "react";
 
 const links = [
@@ -17,7 +18,14 @@ export default function Navbar() {
         <header className="fixed top-0 w-full z-50 border-b border-neutral-200 bg-white">
             <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo */}
-                <a href="#home">
+                <a href="#home" className="flex items-center gap-6">
+                    <Image 
+                        src="/images/logo.png"
+                        alt="Plex Commodities Co."
+                        width={60}
+                        height={60}
+                        priority
+                    />
                     Plex Commodities Co.
                 </a>
 
