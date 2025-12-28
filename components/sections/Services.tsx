@@ -6,19 +6,19 @@ const services: Service[] = [
         id: 1,
         title: "Brokerage",
         description:
-            "Independent brokerage services connecting buyers and sellers of agricultural commodities, facilitating transparent and efficient transactions based on market knowledge."
+            "We facilitate efficient and transparent transactions between buyers and sellers of agricultural commodities across North America, Latin America and Asia. Leveraging strong market networks and regulatory expertise, we manage negotiations, contracts and logistics to ensure compliant and competitive trade operations."
     },
     {
         id: 2,
         title: "Consulting",
         description:
-            "Market-focused consulting services covering pricing strategies, commercial decision-making and risk evaluation, tailored to each client’s specific needs.",
+            "We provide strategic consulting services for companies involved in international trade, supporting market entry, pricing strategies and regulatory compliance. Our data-driven approach helps clients optimize operations, reduce risks and improve profitability across global markets.",
     },
     {
         id: 3,
         title: "Sourcing Agent",
         description:
-            "Support in identifying reliable suppliers and sourcing agricultural products, ensuring quality, traceability and alignment with commercial requirements.",
+            "Acting as a sourcing agent, we identify and secure reliable suppliers of pulses, grains and agricultural commodities. We support supplier evaluation, negotiations and logistics coordination, ensuring quality, traceability and cost-efficient supply chains.",
     },
 ]
 
