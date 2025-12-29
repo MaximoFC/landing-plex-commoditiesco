@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { defaultSEO } from "@/lib/seo";
 import "./globals.css";
 import { Inter, Source_Serif_4 } from "next/font/google"
 
@@ -13,11 +13,7 @@ const serif = Source_Serif_4({
   variable: "--font-serif"
 })
 
-export const metadata: Metadata = {
-  title: "Plex Commodities Co. | Agricultural Commodities & Trading",
-  description: 
-    "Plex Commodities Co. is a trading and consulting company focused on agricultural commodities, brokerage and sourcing.",
-};
+export const metadata = defaultSEO
 
 export default function RootLayout({
   children,
