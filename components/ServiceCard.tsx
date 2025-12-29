@@ -15,23 +15,25 @@ export default function ServiceCard({ service }: Props) {
     const Icon = icons[service.title as keyof typeof icons]
 
     return (
-        <div className="relative bg-white rounded-lg p-8 pt-12 shadow-sm hover:shadow-md transition overflow-hidden">
+        <div className="relative pl-10">
+            <span className="absolute left-0 top-0 h-full w-px bg-stone-300"/>.
+
             {/* Icon background */}
             {Icon && (
-                <div className="absolute -top-1 -right-1 opacity-80">
+                <div className="absolute -top-6 -right-6 text-emerald-900/10">
                     <Icon
-                        size={96}
+                        size={120}
                         strokeWidth={1}
                     />
                 </div>
             )}
 
             {/* Content */}
-            <h3 className="text-lg font-semibold mb-4">
+            <h3 className="font-serif text-xl text-neutral-900 mb-4">
                 {service.title}
             </h3>
 
-            <p className="leading-relaxed text-sm">
+            <p className="text-neutral-900 leading-relaxed">
                 {service.description}
             </p>
         </div>
