@@ -25,15 +25,20 @@ const services: Service[] = [
 export default function Services() {
     return (
         <section
-            className="py-20 bg-gray-50"
+            className="py-32 bg-stone-50"
             id="services"
         >
             <div className="max-w-7xl mx-auto px-6">
-                <h2 className="font-serif text-3xl font-bold text-center mb-12">
+                <h2 className="font-serif text-3xl md:text-4xl text-neutral-900 mb-6">
                     OUR SERVICES
                 </h2>
+                <p className="text-neutral-600 text-lg leading-relaxed mb-6">
+                    We provide specialized services designed to support agricultural
+                    commodity trading across global markets, combining expertise,
+                    transparency and operational efficiency.
+                </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
                     {services.map(service => (
                         <ServiceCard
                             key={service.id}

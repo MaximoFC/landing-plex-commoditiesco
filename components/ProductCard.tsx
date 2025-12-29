@@ -7,9 +7,9 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="flex flex-col items-center bg-white rounded-2xl shadow-xl hover:-translate-y-6 transition-transform duration-300 p-8 max-w-sm mx-auto">
+    <article className="flex flex-col border-l border-stone-300 pl-8">
       {/* Imagen más grande y centrada */}
-      <div className="relative w-48 h-48 mb-6">
+      <div className="relative w-full h-56 bg-white">
         <Image
           src={product.image}
           alt={product.title}
@@ -19,12 +19,12 @@ export default function ProductCard({ product }: ProductCardProps) {
       </div>
 
       {/* Título centrado, mayúsculas y más grande */}
-      <h3 className="text-2xl font-bold mb-3 text-center uppercase">
+      <h3 className="font-serif text-xl text-neutral-900 mb-3 text-center">
         {product.title}
       </h3>
 
       {/* Descripción centrada */}
-      <p className="text-base text-gray-600 text-center">
+      <p className="text-neutral-600 leading-relaxed">
         {product.description}
       </p>
     </article>

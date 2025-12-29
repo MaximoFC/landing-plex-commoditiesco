@@ -70,20 +70,24 @@ const products: Product[] = [
 export default function Products() {
   return (
     <section 
-      className="py-20 bg-gray-50"
+      className="py-32 bg-stone-50"
       id="products"
     >
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="font-serif text-3xl font-bold text-center mb-12">OUR PRODUCTS</h2>
+        <div className="text-center max-w-2xl mx-auto mb-24">
+          <h2 className="font-serif text-3xl md:text-4xl text-neutral-900 mb-6">
+            OUR PRODUCTS
+          </h2>
+          <p className="text-neutral-600 text-lg leading-relaxed">
+            We specialize in sourcing and trading high-quality pulses and
+            agricultural commodities, meeting international standards for
+            food-grade quality, traceability and reliability.
+          </p>
+        </div>
+        
 
         <div
-          className="
-            grid
-            grid-cols-1
-            sm:grid-cols-2
-            lg:grid-cols-3
-            gap-16
-          "
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20"
         >
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
