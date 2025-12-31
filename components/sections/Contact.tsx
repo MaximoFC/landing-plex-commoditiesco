@@ -1,6 +1,50 @@
 "use client";
+import React, { useState } from "react";
 
 export default function Contact() {
+  type contactFormData = {
+    name: string;
+    email: string;
+    message: string;
+  };
+
+  const [formData, setFormData] = useState<contactFormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setSent(true);
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      const data = await res.json();
+      setError(data.error || "Error al enviar el mensaje");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="py-32 bg-stone-50" id="contact">
       <div className="max-w-7xl mx-auto px-6">
@@ -15,15 +59,18 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-20 items-start">
-          <form className="space-y-4 max-w-md">
+          <form className="space-y-4 max-w-md" onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm text-neutral-700 mb-2">
                 Name
               </label>
               <input
                 type="text"
+                name="name"
                 className="w-full border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-neutral-900"
                 placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
               />
             </div>
             <div>
@@ -32,8 +79,11 @@ export default function Contact() {
               </label>
               <input
                 type="email"
+                name="email"
                 className="w-full border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-neutral-900"
                 placeholder="you@email.com"
+                value={formData.email}
+                onChange={handleChange}
               />
             </div>
 
@@ -43,8 +93,11 @@ export default function Contact() {
               </label>
               <textarea
                 rows={5}
+                name="message"
                 className="w-full border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-neutral-900"
                 placeholder="Tell us how we can help you"
+                value={formData.message}
+                onChange={handleChange}
               />
             </div>
 
