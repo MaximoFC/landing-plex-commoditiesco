@@ -1,8 +1,9 @@
+"use client";
+
 export default function Contact() {
   return (
-    <section className="py-32 bg-white" id="contact">
+    <section className="py-32 bg-stone-50" id="contact">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-24">
           <h2 className="font-serif text-3xl md:text-4xl text-neutral-900 mb-6">
             CONTACT US
@@ -13,10 +14,18 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-20 items-start">
-          {/* Contact Form */}
-          <form className="space-y-8">
+          <form className="space-y-4 max-w-md">
+            <div>
+              <label className="block text-sm text-neutral-700 mb-2">
+                Name
+              </label>
+              <input
+                type="text"
+                className="w-full border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-1 focus:ring-neutral-900"
+                placeholder="Your name"
+              />
+            </div>
             <div>
               <label className="block text-sm text-neutral-700 mb-2">
                 Email
@@ -47,10 +56,8 @@ export default function Contact() {
             </button>
           </form>
 
-          {/* Vertical Divider */}
-          <div className="hidden lg:block w-px bg-neutral-200 h-full" />
+          <div className="hidden lg:block w-px bg-stone-300 h-full" />
 
-          {/* Contact Info */}
           <div className="space-y-12">
             <div>
               <h3 className="font-serif text-xl text-neutral-900 mb-3">
