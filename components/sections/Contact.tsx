@@ -103,9 +103,10 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="inline-block bg-neutral-900 text-white px-8 py-4 text-sm tracking-wide hover:bg-neutral-800 transition"
+              disabled={loading}
+              className="inline-block bg-neutral-900 text-white px-8 py-4 text-sm tracking-wide hover:bg-neutral-800 transition disabled:opacity-50"
             >
-              SEND MESSAGE
+              {loading ? "SENDING..." : "SEND MESSAGE"}
             </button>
           </form>
 
