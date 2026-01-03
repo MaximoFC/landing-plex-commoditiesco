@@ -5,29 +5,39 @@ const siteUrl = "https://plexcommodities.com"
 
 export const defaultSEO: Metadata = {
     title: {
-        default: `${siteName} | Agricultural Commodities Brokerage & Trading`,
+        default: `${siteName} | Agricultural Commodities Brokerage`,
         template: `%s | ${siteName}`
     },
+
     description:
-        "Independent agricultural commodities brokerage providing trading, sourcing and consulting services across global markets.",
+        "Plex Commodities Co. is an independent agricultural commodities brokerage based in Manitoba, Canada, providing trading, sourcing and consulting services across the United States and Canada.",
     
     metadataBase: new URL(siteUrl),
 
     openGraph: {
-        title: siteName,
+        title: `${siteName} | Agricultural Commodities Brokerage`,
         description:
-            "Agricultural commodities brokerage and consulting firm connecting global markets.",
+            "Independent agricultural commodities brokerage offering trading, sourcing and consulting services across global markets.",
         url: siteUrl,
         siteName,
         locale: "en_US",
-        type: "website"
+        type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Plex Commodities Co. – Agricultural Commodities Brokerage"
+            }
+        ]
     },
 
     twitter: {
         card: "summary_large_image",
-        title: siteName,
+        title: `${siteName} | Agricultural Commodities Brokerage`,
         description:
-            "Agricultural commodities brokerage and consulting firm connecting global markets."
+            "Agricultural commodities brokerage based in Canada, serving U.S. and Canadian markets.",
+        images: ["/og-image.png"]
     },
 
     robots: {
