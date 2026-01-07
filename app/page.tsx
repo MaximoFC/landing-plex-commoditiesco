@@ -14,7 +14,6 @@ export default function Page() {
       <main className="py-24">
         <Home />
         <About />
-        <Products />
         <Services />
         <Contact />
       </main>
