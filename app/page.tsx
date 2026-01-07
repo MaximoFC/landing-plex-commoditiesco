@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <Navbar />
 
-      <main className="py-24">
+      <main className="pt-20 ">
         <Home />
         <About />
         <Products />
