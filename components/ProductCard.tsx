@@ -3,30 +3,42 @@ import { Product } from "@/types/product";
 
 interface ProductCardProps {
   product: Product;
+  reverse?: boolean; // si true, la imagen va a la izquierda
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({
+  product,
+  reverse = false,
+}: ProductCardProps) {
   return (
-    <article className="flex flex-col border-l border-stone-300 pl-8">
-      {/* Imagen más grande y centrada */}
-      <div className="relative w-full h-56 bg-white">
+    <div
+      className={`flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto mb-16 ${
+        reverse ? "md:flex-row-reverse" : ""
+      }`}
+    >
+      {/* Imagen grande */}
+      <div className="relative w-full md:w-1/2 h-64 md:h-96 flex-shrink-0">
         <Image
           src={product.image}
           alt={product.title}
           fill
-          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover rounded-lg" // Se quita shadow-lg
         />
       </div>
 
-      {/* Título centrado, mayúsculas y más grande */}
-      <h3 className="font-serif text-xl text-neutral-900 mb-3 text-center">
-        {product.title}
-      </h3>
+      {/* Línea vertical de separación */}
+      <div className="hidden md:block w-px bg-gray-300 h-96 mx-6"></div>
 
-      {/* Descripción centrada */}
-      <p className="text-neutral-600 leading-relaxed">
-        {product.description}
-      </p>
-    </article>
+      {/* Texto al lado */}
+      <div className="w-full md:w-1/2 mt-6 md:mt-0">
+        <h3 className="text-2xl md:text-3xl font-serif text-gray-900 mb-4">
+          {product.title}
+        </h3>
+        <p className="text-gray-700 text-lg leading-relaxed">
+          {product.description}
+        </p>
+      </div>
+    </div>
   );
 }
