@@ -14,6 +14,7 @@ export default function Page() {
       <main className="pt-20 ">
         <Home />
         <About />
+        <Products />
         <Services />
         <Contact />
       </main>
