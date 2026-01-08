@@ -9,6 +9,10 @@ export default function AboutHero() {
                 alt="Agricultural commodities trading and sourcing"
                 fill
                 priority
+                sizes="100vw"
+                quality={85}
+                placeholder="blur"
+                blurDataURL="/images/about-1-blur.png"
                 className="object-cover"
             />
 
