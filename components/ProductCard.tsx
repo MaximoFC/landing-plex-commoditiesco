@@ -23,7 +23,7 @@ export default function ProductCard({
           alt={product.title}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover rounded-lg" // Se quita shadow-lg
+          className="object-contain" // Se quita shadow-lg
         />
       </div>
 

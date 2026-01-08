@@ -22,8 +22,8 @@ export default function HomeSection() {
   }, [])
 
   return (
-    <section id='home' className="relative overflow-hidden bg-stone-50">
-      <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
+    <section id='home' className="relative overflow-hidden bg-stone-50 min-h-[calc(100vh-80px)] flex items-center">
+      <div className="mx-auto max-w-7xl px-6 w-full">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* TEXT CONTENT */}
           <div className="max-w-xl">
@@ -55,7 +55,7 @@ export default function HomeSection() {
           </div>
 
           {/* IMAGE SLIDER */}
-          <div className="relative h-105 w-full overflow-hidden rounded-xl md:h-120">
+          <div className="relative h-[420px] w-full overflow-hidden rounded-xl md:h-[520px]">
             {images.map((src, index) => (
               <Image
                 key={src}
