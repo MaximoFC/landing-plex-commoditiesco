@@ -83,23 +83,23 @@ export default function Products() {
         
         {/* Carousel */}
         <div className="relative overflow-hidden">
-          <div className="flex gap-24 animate-products-marquee">
+          <div className="flex animate-products-marquee w-max">
             {[...products, ...products].map((product, index) => (
               <Link
                 key={`${product.id}-${index}`}
                 href="/products"
-                className="flex-shrink-0 w-56 text-center group"
+                className="flex-shrink-0 w-40 sm:w-48 md:w-56 text-center group mr-16"
               >
                 <div className="relative w-full h-40 mb-6">
                   <Image
                     src={product.image}
                     alt={product.title}
                     fill
-                    className="object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="object-contain transition-transform duration-300 lg:group-hover:scale-105"
                   />
                 </div>
 
-                <span className="block text-sm uppercase tracking-widest text-neutral-700 group-hover:text-neutral-900 transition">
+                <span className="block text-sm uppercase tracking-widest text-neutral-700 lg:group-hover:text-neutral-900 transition">
                   {product.title}
                 </span>
               </Link>

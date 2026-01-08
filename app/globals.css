@@ -30,10 +30,11 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-products-marquee {
-  animation: products-marquee 30s linear infinite;
+  animation: products-marquee 80s linear infinite;
+  will-change: transform;
 }
