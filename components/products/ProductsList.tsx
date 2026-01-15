@@ -1,3 +1,4 @@
+import Navbar from "../Navbar";
 import ProductCard from "../ProductCard";
 import { Product } from "@/types/product";
 
@@ -70,6 +71,7 @@ const products: Product[] = [
 export default function ProductsList() {
   return (
     <section>
+      <Navbar />
       <div>
         <div>
           {products.map((product, index) => (
