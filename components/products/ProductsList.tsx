@@ -69,7 +69,7 @@ const products: Product[] = [
 
 export default function ProductsList() {
   return (
-    <section className="bg-stone-50">
+    <section>
       <div>
         <div>
           {products.map((product, index) => (
