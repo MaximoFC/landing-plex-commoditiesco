@@ -30,11 +30,11 @@ export default function Navbar() {
             height={48}
             priority
           />
-          <span className="hidden md:inline text-sm font-serif font-bold">Plex Commodities Co.</span>
+          <span className="hidden md:inline text-md font-serif font-bold">Plex Commodities Co.</span>
         </Link>
 
         {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-12 text-sm text-neutral-700">
+        <ul className="hidden md:flex items-center gap-12 text-md text-neutral-700">
           {sections.map(({ label, id }) => {
             const href = isHome ? `#${id}` : `/#${id}`;
 
@@ -54,7 +54,7 @@ export default function Navbar() {
         {/* Mobile button */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-sm text-neutral-700"
+          className="md:hidden text-md text-neutral-700"
         >
           Menu
         </button>
@@ -63,7 +63,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-white border-t border-stone-200">
-          <ul className="flex flex-col px-6 py-8 gap-6 text-sm text-neutral-700">
+          <ul className="flex flex-col px-6 py-8 gap-6 text-md text-neutral-700">
             {sections.map(({ label, id }) => {
               const href = isHome ? `#${id}` : `/#${id}`;
 

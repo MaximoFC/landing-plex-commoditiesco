@@ -13,7 +13,7 @@ export default function WhoWeAre() {
                         </span>
 
                         <h2 className="font-serif text-3xl md:text-4xl text-neutral-900 mb-8">
-                            Independent expertise in agricultural commodities
+                            Professional Agri-Food Brokers obsessed with quality, detail & efficiency
                         </h2>
 
                         <p className="text-neutral-600 leading-relaxed mb-6">
