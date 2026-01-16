@@ -30,7 +30,7 @@ export default function Navbar() {
             height={48}
             priority
           />
-          <span className="hidden md:inline text-sm">Plex Commodities Co.</span>
+          <span className="hidden md:inline text-sm font-serif font-bold">Plex Commodities Co.</span>
         </Link>
 
         {/* Desktop */}

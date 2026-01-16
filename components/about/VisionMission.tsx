@@ -37,9 +37,9 @@ export default function VisionMission() {
                             Building long-term value across agricultural markets
                         </h3>
                         <p className="text-neutral-600 leading-relaxed">
-                            To become a trusted benchmark in the agricultural commodities industry,
-                            building collaborative and sustainable ecosystems that connect producers
-                            and buyers across North American markets.
+                            To become a global benchmark of trust and excellence in the agricultural commodities industry, where
+                            superior product quality, impeccable process excellence, and obsessive attention to detail build
+                            collaborative, sustainable, and reliable ecosystem that connect producers and buyers worldwide.
                         </p>
                     </div>
                 </div>
@@ -56,10 +56,10 @@ export default function VisionMission() {
                             Acting as a reliable partner in every transaction
                         </h3>
                         <p className="text-neutral-600 leading-relaxed">
-                            To serve as a reliable intermediary in commodities trading, empowering
-                            businesses with expert brokerage, sourcing, and consulting services that
-                            facilitate efficient and compliant transactions across the United States
-                            and Canada.
+                            To be the partner of reference that companies choose for absolute excellence: we deliver brokerage,
+                            sourcing, and strategic consulting with the highest quality in every product and process, meticulous
+                            attention to detail at every step, and an unwavering commitment to precision, compliance, and traceability
+                            - all designed to generate lasting trust and real value in the global trade of agricultural commodities.
                         </p>
                     </div>
 

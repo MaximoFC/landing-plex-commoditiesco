@@ -23,9 +23,8 @@ export default function Footer() {
             </div>
 
             <p className="max-w-sm text-sm leading-relaxed text-neutral-600">
-              Independent agricultural commodities brokerage connecting producers
-              and buyers across North America through transparent and reliable
-              trading.
+              From Manitoba, Canada - We support agrifood companies to confident seize new opportunities in global markets through
+              brokerage, sourcing, and strategic consulting.
             </p>
           </div>
 

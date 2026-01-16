@@ -13,10 +13,14 @@ export default function About() {
                         ABOUT US
                     </h2>
                     <p className="text-neutral-600 text-lg leading-relaxed">
-                        Plex Commodities Co. is an independent agricultural commodities brokerage
-                        headquartered in Winnipeg, Manitoba, Canada. We support clients across
-                        the United States and Canada through brokerage, sourcing and strategic
-                        consulting services focused on efficiency, compliance and long-term value.
+                        Plex Commodities Co. is an independent brokerage firm headquartered in Winnipeg, Manitoba, Canada - 
+                        at the heart of North America´s leading pulse and grain production areas.
+                        <br />
+                        <br />
+                        We combine strong local expertise and operational efficiency with extensive global market networks
+                        to support producers and buyers in navigating international trade with confidence. Our focus is on
+                        optimizing costs, ensuring traceability and compliance, and unlocking new commercial opportunities
+                        across continents.
                     </p>
                 </div>
 
@@ -27,9 +31,8 @@ export default function About() {
                             OUR VISION
                         </h3>
                         <p className="text-neutral-600 leading-relaxed">
-                            To build a sustainable and collaborative commodities ecosystem
-                            connecting producers and buyers through transparent and resilient
-                            supply chains.
+                            To be the world´s trusted benchmark in agricultural commodities, driven by superior quality, flawless
+                            processes, and obsessive attention to detail.
                         </p>
                     </div>
 
@@ -38,8 +41,9 @@ export default function About() {
                             OUR MISSION
                         </h3>
                         <p className="text-neutral-600 leading-relaxed">
-                            To act as a trusted intermediary, empowering businesses with expert
-                            brokerage, sourcing and consulting solutions across North American markets.
+                            To serve as the partner of excellence, providing brokerage, sourcing, and consulting with unmatched
+                            quality in products and processes, rigorous precision in every detail, and absolute trust in every
+                            global transaction.
                         </p>
                     </div>
                 </div>

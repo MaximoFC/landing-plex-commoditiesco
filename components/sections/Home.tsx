@@ -28,13 +28,12 @@ export default function HomeSection() {
           {/* TEXT CONTENT */}
           <div className="max-w-xl order-1 lg:order-none">
             <h1 className="text-3xl font-semibold leading-tight text-gray-900 sm:text-4xl md:text-5xl">
-              Independent agricultural commodities brokerage across North America
+              Welcome to Plex Commodities
             </h1>
 
             <p className="mt-6 text-lg leading-relaxed text-gray-600">
-              Connecting producers and buyers through transparent trading,
-              sourcing, and consulting services focused on quality, compliance,
-              and long-term value.
+              From Manitoba, Canada - We support agrifood companies to confidently seize new opportunities in global
+              markets through brokerage, sourcing, and strategic consulting.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">

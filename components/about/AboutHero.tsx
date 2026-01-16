@@ -25,19 +25,18 @@ export default function AboutHero() {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-3xl">
-            <span className="block text-sm uppercase tracking-[0.25em] text-stone-200 mb-6">
+            <span className="block text-sm uppercase tracking-[0.25em] text-white mb-6 text-shadow-lg">
               About Plex Commodities
             </span>
 
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8 leading-tight text-shadow-lg">
               Driving growth and trust in agricultural commodities
             </h1>
 
-            <p className="text-stone-200 text-lg leading-relaxed">
-              Plex Commodities Co. is an independent brokerage firm based in
-              Manitoba, Canada, serving the United States and Canada with
-              expertise in trading, sourcing, and consulting for agricultural
-              commodities.
+            <p className="text-white text-lg leading-relaxed text-shadow-lg">
+              Plex Commodities Co. is an independent brokerage firm headquartered in Manitoba, Canada, serving producers and buyers
+              worldwide with with unmatched expertise in trading, sourcing, and strategic consulting for agricultural commodities -
+              built on superior quality, flawless processes, and obssesive attention to detail.
             </p>
           </div>
         </div>
