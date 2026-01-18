@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { Product } from "@/types/product";
 import Image from "next/image";
@@ -90,12 +88,16 @@ export default function Products() {
                 href="/products"
                 className="flex-shrink-0 w-40 sm:w-48 md:w-56 text-center group mr-16"
               >
-                <div className="relative w-full h-40 mb-6">
+                <div className="relative w-full h-40 mb-6 flex items-center justify-center">
                   <Image
                     src={product.image}
                     alt={product.title}
-                    fill
+                    width={240}
+                    height={240}
+                    sizes="240px"
+                    quality={60}
                     className="object-contain transition-transform duration-300 lg:group-hover:scale-105"
+                    loading="lazy"
                   />
                 </div>
 

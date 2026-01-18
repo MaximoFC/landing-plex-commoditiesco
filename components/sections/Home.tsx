@@ -1,30 +1,16 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-
-const images = [
-  '/images/hero-1.webp',
-  '/images/hero-2.webp',
-  '/images/hero-3.webp',
-]
+import { HeroImage } from '../home/HeroImage'
+import { HeroSlider } from '../home/HeroSlider'
 
 export default function HomeSection() {
-  const [currentImage, setCurrentImage] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length)
-    }, 6000)
-
-    return () => clearInterval(interval)
-  }, [])
-
   return (
-    <section id='home' className="relative overflow-hidden bg-stone-50 py-20 lg:min-h-[calc(100vh-80px)] lg:flex lg:items-center">
+    <section
+      id='home'
+      className="relative overflow-hidden bg-stone-50 py-20 lg:min-h-[calc(100vh-80px)] lg:flex lg:items-center"
+    >
       <div className="mx-auto max-w-7xl px-6 w-full">
         <div className="grid items-center gap-10 lg:grid-cols-2">
+
           {/* TEXT CONTENT */}
           <div className="max-w-xl order-1 lg:order-none">
             <h1 className="text-3xl font-semibold leading-tight text-gray-900 sm:text-4xl md:text-5xl">
@@ -53,24 +39,9 @@ export default function HomeSection() {
             </div>
           </div>
 
-          {/* IMAGE SLIDER */}
-          <div className="relative h-[260px] sm:h-[340px] md:h-[520px] w-full overflow-hidden rounded-xl order-2 lg:order-none">
-            {images.map((src, index) => (
-              <Image
-                key={src}
-                src={src}
-                alt="Agricultural commodities supply chain"
-                fill
-                priority={index === 0}
-                className={`absolute inset-0 object-cover transition-opacity duration-1000 ${
-                  index === currentImage ? 'opacity-100' : 'opacity-0'
-                }`}
-              />
-            ))}
-
-            {/* green overlay */}
-            <div className="absolute inset-0 bg-green-900/30 sm:bg-green-900/20" />
-          </div>
+          {/* IMAGE */}
+          <HeroImage />
+          <HeroSlider />
         </div>
       </div>
     </section>
