@@ -24,7 +24,7 @@ export const defaultSEO: Metadata = {
         type: "website",
         images: [
             {
-                url: "/og-image.png",
+                url: "https://plexcommodities.com/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Plex Commodities Co. – Agricultural Commodities Brokerage"
@@ -37,7 +37,7 @@ export const defaultSEO: Metadata = {
         title: `${siteName} | Agricultural Commodities Brokerage`,
         description:
             "Agricultural commodities brokerage based in Canada, serving U.S. and Canadian markets.",
-        images: ["/og-image.png"]
+        images: ["https://plexcommodities.com/og-image.png"]
     },
 
     robots: {
